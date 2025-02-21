@@ -14,7 +14,7 @@ const todoRoutes = require("./src/routes/todoRoutes");
 
 const connectToDB = async () => {
   try {
-    await mongoose.connect(process.env.mongoURI);
+    await mongoose.connect('mongodb+srv://anikesh:anikesh123@test.id4mp5e.mongodb.net/crud');
     console.log("MongoDB connection established");
   } catch (err) {
     console.error("Error connecting to MongoDB:", err);
